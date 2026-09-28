@@ -102,6 +102,10 @@ p{color:var(--ink-soft);}
 .photo-frame:hover img{filter:grayscale(.15) contrast(1.05) brightness(.92);transform:scale(1.03);}
 .photo-frame .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 22px 16px;background:linear-gradient(0deg,rgba(15,14,13,.85),transparent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);font-weight:600;}
 @media(max-width:760px){.origin .grid{grid-template-columns:1fr;}}
+/* why two-column */
+.why .grid{display:grid;grid-template-columns:1.05fr .82fr;gap:clamp(32px,6vw,68px);align-items:center;}
+.photo-frame.tall{aspect-ratio:4/5;}
+@media(max-width:760px){.why .grid{grid-template-columns:1fr;}.why .photo-frame{order:-1;}}
 
 /* PROGRAM (light) */
 .program{background:var(--paper);color:var(--paper-ink);}
@@ -223,14 +227,23 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
 </header>
 
 <!-- WHY -->
-<section class="sec prose">
+<section class="sec why">
+  <div class="sec-bg"><img src="images/handstand.png" alt=""><div class="tint"></div><div class="glow"></div></div>
   <div class="w">
-    <p class="big reveal">I've been into this my whole adult life. As an athlete and a curious individual.</p>
-    <p class="reveal">Nutrition, training, recovery.</p>
-    <p class="reveal">Keto, fasting, calorie counting, carb cycling. I've tried it all. They all worked.</p>
-    <p class="reveal">But they all came with the same condition: live this way from now on.</p>
-    <p class="reveal">I don't want results that depend on following rules forever. I want results that teach me balance.</p>
-    <p class="reveal">So eventually, everything fell away. The longer the program, the easier it was to drift. A work trip, a bad week, and suddenly you're back where you started.</p>
+    <div class="grid">
+      <div class="prose">
+        <p class="big reveal">I've been into this my whole adult life. As an athlete and a curious individual.</p>
+        <p class="reveal">Nutrition, training, recovery.</p>
+        <p class="reveal">Keto, fasting, calorie counting, carb cycling. I've tried it all. They all worked.</p>
+        <p class="reveal">But they all came with the same condition: live this way from now on.</p>
+        <p class="reveal">I don't want results that depend on following rules forever. I want results that teach me balance.</p>
+        <p class="reveal">So eventually, everything fell away. The longer the program, the easier it was to drift. A work trip, a bad week, and suddenly you're back where you started.</p>
+      </div>
+      <div class="photo-frame tall reveal">
+        <img src="images/selfie.jpg" alt="Marco Iannitto">
+        <div class="cap">Marco · Niramaya</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -275,7 +288,8 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
         <span class="d31"><b>Day 31</b>Done</span>
       </div>
     </div>
-    <p class="foot reveal">You get the food plan, the recipes, the app, and me checking in every day. The difference: you see it working while you're in it, not three months from now. <b>I'll show you my own data on the night.</b></p>
+    <p class="foot reveal">Everything is handled. The food plan, the recipes, the app, daily check-ins and support. All you bring is your commitment.</p>
+    <p class="foot reveal" style="margin-top:16px;">And you see it working just after the start, not months from now. <b>I'll show you my own data on the night.</b></p>
   </div>
 </section>
 
