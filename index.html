@@ -77,11 +77,12 @@ p{color:var(--ink-soft);}
 .hero-head .ln{display:block;overflow:hidden;padding-bottom:.03em;}
 .hero-head .wd{display:inline-block;transform:translateY(110%);opacity:0;}
 .hero-head.in .wd{transform:none;opacity:1;transition:transform 1s var(--ease),opacity 1s var(--ease);}
-.hero .sub,.hero .metaline,.hero .hero-actions{opacity:0;transform:translateY(16px);}
-.hero.in .sub,.hero.in .metaline,.hero.in .hero-actions{opacity:1;transform:none;transition:opacity .9s var(--ease) .3s,transform .9s var(--ease) .3s;}
-@media(prefers-reduced-motion:reduce){.hero-head .wd{transform:none;opacity:1;}.hero .sub,.hero .metaline,.hero .hero-actions{opacity:1;transform:none;}}
-.hero .sub{margin-top:28px;font-size:clamp(17px,2.2vw,22px);color:#e4ddd0;max-width:40ch;}
-.hero .metaline{margin-top:14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);font-weight:600;}
+.hero .sub,.hero .who-hint,.hero .metaline,.hero .hero-actions{opacity:0;transform:translateY(16px);}
+.hero.in .sub,.hero.in .who-hint,.hero.in .metaline,.hero.in .hero-actions{opacity:1;transform:none;transition:opacity .9s var(--ease) .3s,transform .9s var(--ease) .3s;}
+@media(prefers-reduced-motion:reduce){.hero-head .wd{transform:none;opacity:1;}.hero .sub,.hero .who-hint,.hero .metaline,.hero .hero-actions{opacity:1;transform:none;}}
+.hero .sub{margin-top:28px;font-size:clamp(17px,2.2vw,22px);color:#e4ddd0;max-width:42ch;}
+.hero .who-hint{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:clamp(16px,2vw,19px);color:var(--gold-light);max-width:40ch;line-height:1.4;}
+.hero .metaline{margin-top:16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#cfc7b8;font-weight:600;}
 .hero-actions{margin-top:40px;}
 .scroll-cue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.5);display:flex;flex-direction:column;align-items:center;gap:10px;}
 .scroll-cue .bar{width:1px;height:36px;background:linear-gradient(rgba(255,255,255,.5),transparent);animation:cue 2s var(--ease) infinite;transform-origin:top;}
@@ -224,8 +225,9 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
       <span class="ln"><span class="wd"><em>reset</em></span> <span class="wd">your</span></span>
       <span class="ln"><span class="wd">metabolism.</span></span>
     </h1>
-    <p class="sub">A private evening to launch something I've been building for two years. 20 seats. October 13.</p>
-    <div class="metaline">By personal invitation only</div>
+    <p class="sub">An evening to unveil AEVUM, my 31-day metabolic reset. Hear how it works, taste the food, and decide if it's for you.</p>
+    <p class="who-hint">For anyone tired of programs that ask for the rest of your life.</p>
+    <div class="metaline">20 seats · October 13 · By invitation only</div>
     <div class="hero-actions"><a href="#apply" class="btn">Tell me you're in <span class="arr">&rarr;</span></a></div>
   </div>
   <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
