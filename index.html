@@ -393,6 +393,12 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
     <form id="avevForm" class="reveal" action="https://formspree.io/f/xnpnoywd" method="POST">
       <div class="fld"><label for="av-name">Your name</label><input id="av-name" name="name" type="text" placeholder="First and last" required></div>
       <div class="fld"><label for="av-contact">WhatsApp or email</label><input id="av-contact" name="contact" type="text" placeholder="How I reach you" required></div>
+      <div class="fld"><label for="av-guest">Bringing a guest?</label>
+        <select id="av-guest" name="guest">
+          <option value="Just me">Just me</option>
+          <option value="Plus one (2 of us)">Plus one (2 of us)</option>
+        </select>
+      </div>
       <div class="fld"><label for="av-diet">Any dietary needs? (for the tasting)</label>
         <select id="av-diet" name="dietary">
           <option value="None">No restrictions</option>
@@ -402,7 +408,7 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
           <option value="Other">Other / allergies (note below)</option>
         </select>
       </div>
-      <div class="fld"><label for="av-note">Anything I should know? (optional)</label><textarea id="av-note" name="note" placeholder="Allergies, a question, or just say hi"></textarea></div>
+      <div class="fld"><label for="av-note">Anything I should know? (optional)</label><textarea id="av-note" name="note" placeholder="Your guest's name and any dietary needs, a question, or just say hi"></textarea></div>
       <button type="submit" class="btn">Tell me you're in <span class="arr">&rarr;</span></button>
       <p class="fine">Requesting a seat doesn't commit you to anything. For motivated adults in good general health.</p>
     </form>
