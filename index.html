@@ -53,7 +53,7 @@ p{color:var(--ink-soft);}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
 .reveal.in{opacity:1;transform:none;}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;}
-  .daybar-track .seg{transition:none;}.daybar .seg.strict{width:35.5%;}.daybar .seg.open{width:64.5%;}}
+  .daybar-track .seg{transition:none;}.daybar .seg.strict{width:41.9%;}.daybar .seg.open{width:58.1%;}}
 
 /* nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,4vw,36px);transition:background .4s var(--ease),padding .4s var(--ease);}
@@ -127,13 +127,13 @@ p{color:var(--ink-soft);}
 .daybar-track .seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;overflow:hidden;white-space:nowrap;width:0;transition:width 1.2s var(--ease);}
 .daybar-track .seg.strict{background:linear-gradient(90deg,var(--gold-deep),var(--gold));}
 .daybar-track .seg.open{background:#d8cbae;color:var(--gold-deep);}
-.daybar.in .seg.strict{width:35.5%;}
-.daybar.in .seg.open{width:64.5%;}
+.daybar.in .seg.strict{width:41.9%;}
+.daybar.in .seg.open{width:58.1%;}
 .daybar-scale{position:relative;margin-top:14px;height:34px;font-size:11px;letter-spacing:.03em;color:#8a8272;}
 .daybar-scale span{position:absolute;transform:translateX(-50%);white-space:nowrap;display:flex;flex-direction:column;gap:3px;}
 .daybar-scale b{font-family:var(--serif);font-weight:600;color:var(--paper-ink);font-size:14px;}
 .daybar-scale .d1{left:0;transform:none;align-items:flex-start;}
-.daybar-scale .d11{left:35.5%;text-align:center;align-items:center;}
+.daybar-scale .d11{left:41.9%;text-align:center;align-items:center;}
 .daybar-scale .d31{left:auto;right:0;transform:none;text-align:right;align-items:flex-end;}
 .program .foot{margin-top:40px;font-size:clamp(17px,2vw,19px);color:#5b544a;max-width:52ch;}
 .program .foot b{color:var(--paper-ink);}
@@ -301,16 +301,16 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
     <span class="ey reveal">The program</span>
     <div class="bignum reveal">
       <div class="u"><span class="n" data-count="31">0</span><span class="lbl">days.</span></div>
-      <div class="u"><span class="n" data-count="11">0</span><span class="lbl">of them focused.</span></div>
+      <div class="u"><span class="n" data-count="13">0</span><span class="lbl">of them reset.</span></div>
     </div>
     <div class="daybar reveal" id="daybar">
       <div class="daybar-track">
-        <div class="seg strict">11 focused</div>
-        <div class="seg open">20 stabilization</div>
+        <div class="seg strict">13 reset</div>
+        <div class="seg open">18 stabilization</div>
       </div>
       <div class="daybar-scale">
         <span class="d1"><b>Day 1</b>Start</span>
-        <span class="d11"><b>Day 11</b>Focus ends</span>
+        <span class="d11"><b>Day 13</b>Reset ends</span>
         <span class="d31"><b>Day 31</b>Done</span>
       </div>
     </div>
@@ -330,7 +330,7 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
       <div class="gcard reveal"><img src="images/food-soup.jpg" alt="Chicken and mushroom soup"><div class="t">Warm and clean</div></div>
       <div class="gcard reveal"><img src="images/food-omelette.jpg" alt="Egg white omelette"><div class="t">Simple and satisfying</div></div>
     </div>
-    <p class="foot reveal">On October 13 you taste the food from the focused days, so you know exactly what you're looking at.</p>
+    <p class="foot reveal">On October 13 you taste the food from the reset days, so you know exactly what you're looking at.</p>
   </div>
 </section>
 
@@ -353,7 +353,7 @@ form .btn{width:100%;justify-content:center;margin-top:6px;}
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M5 18a7 7 0 0 1 14 0"/><path d="M12 7V4"/></svg></span>
         <div>
           <h3>Experience the food</h3>
-          <p>Taste the food from the 11-day protocol and see exactly what it looks and tastes like.</p>
+          <p>Taste the food from the 13-day reset and see exactly what it looks and tastes like.</p>
         </div>
       </div>
 
